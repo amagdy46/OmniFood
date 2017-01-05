@@ -19,9 +19,8 @@ header {
 
 nav .logo > img {
     width: 130px;
-    position: relative;
-    top: 20px;
-    left: 60px;
+    margin-top: 20px;
+    margin-left: 60px;
 }
 
 nav ul {
@@ -349,3 +348,13 @@ footer a > .ion-social-instagram:hover {
 footer a > .ion-social-linkedin:hover {
     color: #007bb5;
 }
+
+
+
+
+
+
+
+
+
+
