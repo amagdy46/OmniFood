@@ -1,0 +1,92 @@
+/*Extra small devices (portrait phones, less than 544px)*/
+
+@media only screen and (max-width: 543px) {
+    body {
+        font-size: 14px;
+    }
+    .price-heading {
+        font-size: 100%;
+    }
+    .app-screen {
+        display: none;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    h2 {
+        font-size: 150%;
+    }
+}
+
+
+/*Small devices (landscape phones, less than 768px)*/
+
+@media only screen and (max-width: 767px) {
+    nav .logo > img {
+        width: 100px;
+        margin-top: 5%;
+        margin-left: 10%;
+    }
+    h1 {
+        font-size: 180%;
+    }
+    nav ul {
+        margin: 30px;
+    }
+    nav ul > li > a {
+        margin: 0 5px;
+        font-size: 75%
+    }
+    #features i {
+        margin: 0;
+    }
+    .parallax {
+        height: 100%;
+    }
+    .price-heading {
+        font-size: 70%;
+    }
+}
+
+
+/*Medium devices (tablets, less than 992px)*/
+
+@media only screen and (max-width: 991px) {
+    nav .logo > img {
+        width: 110px;
+        margin-top: 10%;
+        margin-left: 13%;
+    }
+    nav ul {
+        margin: 40px;
+    }
+    nav ul > li > a {
+        margin: 0 5px;
+        font-size: 90%
+    }
+    .divider {
+        margin-bottom: 15px;
+    }
+    #how ul {
+        padding: 10px 0px;
+    }
+    #how ul > li div {
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+}
+
+
+/*Large devices (desktops, less than 1200px)*/
+
+@media only screen and (max-width: 1199px) {
+    .hero-text-box {
+        width: 100%;
+        padding: 0 2%;
+    }
+}
+
+
+/*
+Extra large devices (large desktops)
+No media query since the extra-large breakpoint has no upper bound on its width*/
