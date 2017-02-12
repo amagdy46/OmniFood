@@ -8,13 +8,19 @@
         font-size: 100%;
     }
     .app-screen {
-        display: none;
+        width: 40%;
+    }
+    #how .col-md-3:first-child {
+        text-align: center;
+    }
+    #how div:last-of-type {
+        text-align: center;
     }
     h1 {
-        font-size: 180%;
+        font-size: 150%;
     }
     h2 {
-        font-size: 150%;
+        font-size: 120%;
     }
 }
 
@@ -22,28 +28,54 @@
 /*Small devices (landscape phones, less than 768px)*/
 
 @media only screen and (max-width: 767px) {
-    nav .logo > img {
-        width: 100px;
-        margin-top: 5%;
-        margin-left: 10%;
+    body {
+        font-size: 16px;
+    }
+    nav ul {
+        display: none;
+        float: left;
+    }
+    nav .nav-item {
+        float: none !important;
+        border: 0;
+        margin-left: 0rem !important;
+    }
+    .nav-link:link,
+    .nav-link:visited {
+        border: 0;
+        padding-top: .125rem;
+        padding-bottom: .125rem;
+    }
+    .sticky ul {
+        margin-top: 12px;
+        margin-right: 75px;
+    }
+    .sticky .nav-link:link,
+    .sticky .nav-link:visited {
+        padding: 5px 0;
+        color: #555 !important;
+        font-size: 80%;
+        font-weight: 400;
     }
     h1 {
         font-size: 180%;
     }
-    nav ul {
-        margin: 30px;
-    }
-    nav ul > li > a {
-        margin: 0 5px;
-        font-size: 75%
+    h1 {
+        font-size: 150%;
     }
     #features i {
         margin: 0;
     }
-    .parallax {
-        height: 100%;
-    }
     .price-heading {
+        font-size: 70%;
+    }
+    .plan-box {
+        text-align: center;
+    }
+    .plan-box i {
+        float: none !important;
+    }
+    footer {
         font-size: 70%;
     }
 }
@@ -52,20 +84,20 @@
 /*Medium devices (tablets, less than 992px)*/
 
 @media only screen and (max-width: 991px) {
+    body {
+        font-size: 18px;
+    }
     nav .logo > img {
         width: 110px;
         margin-top: 10%;
         margin-left: 13%;
     }
     nav ul {
-        margin: 40px;
+        margin: 40px 10px;
     }
     nav ul > li > a {
         margin: 0 5px;
         font-size: 90%
-    }
-    .divider {
-        margin-bottom: 15px;
     }
     #how ul {
         padding: 10px 0px;
@@ -73,6 +105,49 @@
     #how ul > li div {
         margin-right: 15px;
         margin-bottom: 10px;
+    }
+    #how ul {
+        margin-top: 10px;
+    }
+    #how ul > li div {
+        width: 40px;
+        height: 40px;
+        font-size: 120%;
+        margin-right: 15px;
+        margin-bottom: 10px;
+    }
+    #how ul > li:last-of-type {
+        margin-bottom: 20px;
+    }
+    #how ul > li p {
+        font-size: 90%;
+    }
+    .download-btn img {
+        margin-right: 5px;
+        margin-left: 7px;
+        height: 40px;
+    }
+    .long-copy {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #cities {
+        font-size: 86%;
+    }
+    #cities ul > li p {
+        margin-bottom: 5px;
+    }
+    #cities ul > li > i {
+        margin-right: 5px;
+    }
+    .plan-box {
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 3%;
+        width: 100%;
+    }
+    .price-heading {
+        font-size: 80%;
     }
 }
 

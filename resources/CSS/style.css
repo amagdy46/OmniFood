@@ -144,6 +144,21 @@ header {
     margin-top: 10px;
     margin-left: 20px;
 }
+/*Mobile nav */
+.mob-nav{
+    color: #fff;
+    cursor: pointer;
+    padding: 8px;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius: 5px;
+    margin-top: 40px;
+    font-size: 150%;
+    margin-left: 10px;
+    display: inline-block;
+    float: right;
+}
+
+/*Main nav */
 nav ul {
     float: right;
     margin-top: 30px;
@@ -174,7 +189,65 @@ nav ul > li > a:active {
     transform: translate(-50%, -50%);
     width: 1140px;
 }
+/*STICKY MENU */
+.logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+.logo-black img {
+    display:none;
+    height: 40px;
+    width: auto;
+    float: left;
+    margin: 5px 0px 3px 100px;
 
+}
+.ion-navicon-round {
+    color: #888a8c;
+}
+
+
+/*Sticky nav */
+.sticky .logo-black img{
+    display: block;
+}
+
+.sticky .logo {
+    display: none;
+}
+.sticky {
+    border-radius: 0px;
+    padding: 0px 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba( 250, 250, 250, 0.98 );
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+.sticky ul {
+    margin-top: 12px;
+    margin-right: 75px;
+}
+.sticky #toggler {
+    color: #E67E22;
+}
+.sticky .mob-nav{
+    margin-top: 5px;
+    margin-left: 5px;
+
+
+}
+.sticky .nav-link:link,
+.sticky .nav-link:visited {
+    padding: 5px 0 18px 0px;
+    color:#555 !important;
+    font-size: 80%;
+    font-weight: 400;
+}
 
 /* Features
 ---------------------------------*/
@@ -186,6 +259,7 @@ nav ul > li > a:active {
     margin-bottom: 25px;
 }
 #features p {
+    text-align: center;
     font-size: 90%;
     line-height: 145%;
 }
@@ -219,7 +293,6 @@ nav ul > li > a:active {
 /* How
 ---------------------------------*/
 #how {
-    max-height: 100% !important;
     padding: 50px 0px;
     background-color: #F4F4F4;
 }
@@ -246,7 +319,6 @@ nav ul > li > a:active {
     font-size: 150%;
     border-radius: 50%;
     float: left;
-    padding: -15px;
     margin-right: 25px;
     margin-bottom: 30px;
 
@@ -275,8 +347,6 @@ nav ul > li > a:active {
     font-size: 120%;
     text-transform: uppercase;;
 }
-#cities .divider {
-    margin-bottom: 5%;
 }
 #cities ul > li {
     clear: both;
@@ -466,3 +536,19 @@ footer a > .ion-social-instagram:hover {
 footer a > .ion-social-linkedin:hover {
     color: #007bb5;
 }
+
+
+/*Animations
+--------------------------------------*/
+
+.wp1,.wp2,
+.wp3,.wp4 {
+    opacity: 0;
+}
+.wp1.animated,.wp2.animated,
+.wp3.animated,.wp4.animated {
+    opacity: 1;
+}
+
+
+
